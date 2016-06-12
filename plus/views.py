@@ -1,3 +1,5 @@
+#coding:utf-8
+
 from django.shortcuts import render
 import queryDB
 # Create your views here.
