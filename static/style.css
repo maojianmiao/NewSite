@@ -4,21 +4,21 @@ float:left;
 display:block;
 }
 .center{
-	width:1000px;
+	width:1000
 }
 
 .menu{
 	width:1366px;
 	height:45px;
-	background-color:black;
+	background-color:blue;
 	
 }
 
 ulmenu{
 	float:left;
 	list-style-type:none;
-	margin-left:0px;
-	@padding:0;
+	margin:0;
+	padding:0;
 	
 }
 li{
@@ -38,7 +38,7 @@ div.menu a{float:left;
 	}
 div.menu a:link,a:visited
 {
-	color: white;
+	color: pink;
 
 }
 div.menu a:hover,a:active
@@ -55,33 +55,8 @@ div.content a:hover,a:active{
 
 .content{
 padding-left:5px;
-margin:0px;
+margin-top:10px;
 	width:500px;
 	height:80px;
-	border-bottom:1px solid gray;
-}
-
-div.user
-{
-	background-color:red;
-}
-div.user ul{
-	float:right;
-	list-style-type:none;
-	margin-top:0;
-	margin-right:20px;
-	padding:0;
-}
-
-div.user a{float:left;
-	display:block;
-	width:70px;
-	text-align:center;
-	height:100%;
-	line-height:45px;
-	margin:0px;
-	padding:0;
-	font-size:18px;
-	font-weight:700;
-
+	@border-bottom:1px solid gray;
 }
