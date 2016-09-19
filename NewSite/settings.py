@@ -10,6 +10,7 @@ https://docs.djangoproject.com/en/1.6/ref/settings/
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 import os
+from django.conf.global_settings import FILE_CHARSET
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 TEMPLATE_DIRS = [os.path.join(BASE_DIR, 'Templates')] 
 
@@ -67,8 +68,12 @@ DATABASES = {
 
 # Internationalization
 # https://docs.djangoproject.com/en/1.6/topics/i18n/
+##new add by jm
+FILE_CHARSET='utf-8'
 
-LANGUAGE_CODE = 'en-us'
+DEFAULT_CHARSET='utf-8'
+
+LANGUAGE_CODE = 'zh_CN'
 
 TIME_ZONE = 'UTC'
 

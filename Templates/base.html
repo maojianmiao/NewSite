@@ -2,7 +2,9 @@
 <html lang="zh_cn">
 
 <head>
-	<title>Home</title>
+	{%block title%}
+here for content
+{%endblock%}
 	<meta charset="utf-8">
 	{% load staticfiles %}
 	<link rel="stylesheet" type="text/css" href="{%static 'style.css'%}"/>
@@ -11,30 +13,37 @@
 <body>
 	<div class="menu">
 		<div class="center">
-			<ul class="ulmenu">
+			<ul>
 				<li><a href="#">首页</a></li>
 				<li><a href="/home/">科技</a></li>
 				<li><a href="#">社会</a></li>
 				<li><a href="#">娱乐</a></li>
 				<li><a href="#">体育</a></li>
 				<li><a href="#">军事</a></li>
+				<li><a href="/about/">关于</a></li>
 			</ul>
 		</div>
-		
+		{% if now%}
+		<div class="time">
+			<p>{{ now }}</p>
+		</div>
+		{% endif%}
 		<div class="user">
-			<ul>
+			<ul>{%if username%}
+				<li><a>{{username}}</a></li>
+				<li><a href="/user/logout/">注销</a></li>
+				{% else %}
 				<li><a href="/user/login/">登录</a></li>
 				<li><a href="/user/regist/">注册</a></li>
+				{% endif%}
 			</ul>
 		</div>
 		
 	</div>
-	{%for new in news%}
-	<div class='content'>
-	<div class="title"><p><span><a href="{{new.link}}" target='_blank'>{{new.title}}</a></span></p></div>
-	<div><p>来源：<span>{{new.siteName}}<span> | {{new.publicDate}}</p></div>
-	</div></div>
-	{% endfor %}
+	<br/>
+{%block content%}
+here for content
+{%endblock%}
 </body>
 
 </html>

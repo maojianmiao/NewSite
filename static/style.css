@@ -1,10 +1,18 @@
 @charset "utf-8"
 div{
+position:relative;
 float:left;
 display:block;
 }
+body{
+	font-family:Cursive;
+}
 .center{
-	width:1000px;
+position:relative;
+left:100px;
+}
+div.center ul{
+margin-top:0px;
 }
 
 .menu{
@@ -14,13 +22,6 @@ display:block;
 	
 }
 
-ulmenu{
-	float:left;
-	list-style-type:none;
-	margin-left:0px;
-	@padding:0;
-	
-}
 li{
 	display:inline
 }
@@ -35,30 +36,34 @@ div.menu a{float:left;
 	padding:0px,10px,0px,10px;
 	font-size:18px;
 	font-weight:700;
+	color:white
 	}
-div.menu a:link,a:visited
-{
-	color: white;
-
-}
-div.menu a:hover,a:active
-{
+div.menu a:hover{
 	background-color:red;
 }
+div.content a:link,a:visited
+{
+	color: black;
+
+}
+div.content a:hover
+{
+	color:red;
+}
+
+
 .clear{
 	clear:both
 }
 
-div.content a:hover,a:active{
-	color:red;
-}
-
 .content{
 padding-left:5px;
-margin:0px;
+border:1px solid gray;
+margin-bottom:10px;
 	width:500px;
 	height:80px;
-	border-bottom:1px solid gray;
+	position:relative;
+	left:140px;
 }
 
 div.user
@@ -84,4 +89,32 @@ div.user a{float:left;
 	font-size:18px;
 	font-weight:700;
 
+}
+
+.homediv{
+	width:60%;
+	position:absolute;
+
+	test-align:center;
+	
+}
+
+.time{
+position:relative;
+	left:290px;
+	float:left;
+	width:200px;
+	height:45px;
+
+}
+
+div.time p{
+  color:white;
+  margin-top:12px;
+}
+div.pages a{
+	color:blue;
+}
+div.pages a:hover{
+	color:red;
 }

@@ -4,16 +4,33 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <title>注册</title>
+    {% load staticfiles %}
+	<link rel="stylesheet" type="text/css" href="{%static 'login.css'%}"/>
 </head>
 
 <body>
-<h1>注册页面：</h1>
+<div class="login">
+<div class="logtitle">
+<p>注册</p>
+</div>
+<div class="shuru">
+
 <form method = 'post' enctype="multipart/form-data">
-    {% csrf_token %}
-    {{uf.as_p}}
-    <input type="submit" value = "ok" />
+{% csrf_token %}
+	<input type="text" name="username" value="账号/邮箱" onfocus="javascript:this.value=''" style="color:gray">
+	<br/>
+	<input name="passwd" value="密码" onfocus="javascript:this.value='';this.type='password'" style="color:gray">
+	{% if msg %}
+	<p>{{ msg }}</p>
+	{% else %}
+	<br/>
+	<br/>
+	{% endif %}
+    <input type="submit" style="width:300px;height:30px;font-size:14px" value = "注册" />
+    <p>没有账号？点击<a href="/user/login/">登录</a></p>
 </form>
 <br>
-<a href="http://127.0.0.1:8000/online/login/">登陆</a>
+</div>
+</div>
 </body>
 </html>

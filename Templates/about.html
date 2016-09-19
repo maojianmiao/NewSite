@@ -1,0 +1,23 @@
+{% extends "base.html"%}
+<!DOCTYPE html>
+<html lang="zh_cn">
+
+<head>
+	{% block title%}
+	<title>About</title>
+	{%endblock%}
+	<meta charset="utf-8">
+	{% load staticfiles %}
+	<link rel="stylesheet" type="text/css" href="{%static 'style.css'%}"/>
+</head>
+
+<body>
+	{%block content%}
+	<div class="homediv">
+		<p>这是一个自动推送新闻的兴趣项目，目前只是抓取了cnBeta的新闻，正做凤凰的新闻抓取。后期慢慢支持大部分新闻站点。抓取的新闻只是提供一个link转到源新闻网站，
+		不会对源网站造成伤害。如有有兴趣或涉及侵权事宜请联系发送邮件至<a href="mailto:gdmaojm@163.com">gdmaojm@163.com</a></p>
+	</div>
+	{%endblock%}
+</body>
+
+</html>

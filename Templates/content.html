@@ -1,0 +1,28 @@
+{% extends "base.html"%}
+{% block title%}
+<title>Home</title>
+{% endblock %}
+
+	{%block content%}
+	{%for new in news%}
+	<div class='content'>
+	<div class="title"><p><span><a href="{{new.link}}" target='_blank'>{{new.title}}</a></span></p></div>
+	<div><p>来源：<span>{{new.siteName}}<span> | {{new.publicDate}}</p></div>
+	</div></div>
+	{% endfor %}
+	<br/>
+	<div class="pages">
+	{% ifnotequal curPage 1%}
+		<a href="?curPage={{curPage}}&&allPage={{allPage}}&&pageType=pageUp">
+		上一页
+		</a>
+	{% endifnotequal %}
+	第{{curPage}}/{{allPage}}页
+	
+	{% ifnotequal curPage allPage%}
+		<a href="?curPage={{curPage}}&&allPage={{allPage}}&&pageType=pageDown">
+		下一页
+		</a>
+	{% endifnotequal %}
+	</div>
+	{%endblock%}
