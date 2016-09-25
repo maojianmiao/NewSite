@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh_cn">
+
+<head>
+	<title>Home</title>
+	<meta charset="utf-8">
+	{% load staticfiles %}
+	<link rel="stylesheet" type="text/css" href="{%static 'style.css'%}"/>
+</head>
+
+<body>
+	<div class="menu">
+		<div class="center">
+			<ul class="ulmenu">
+				<li><a href="#">首页</a></li>
+				<li><a href="/home/">科技</a></li>
+				<li><a href="#">社会</a></li>
+				<li><a href="#">娱乐</a></li>
+				<li><a href="#">体育</a></li>
+				<li><a href="#">军事</a></li>
+			</ul>
+		</div>
+	</div>
+	{%for new in news%}
+	<div class='content'>
+	<div class="title"><p><span><a href="{{new.link}}" target='_blank'>{{new.title}}</a></span></p></div>
+	<div><p>来源：<span>{{new.siteName}}<span> | {{new.publicDate}}</p></div>
+	</div></div>
+	{% endfor %}
+</body>
+
+</html>

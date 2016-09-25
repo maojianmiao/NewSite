@@ -1,6 +1,9 @@
 eclipse.preferences.version=1
 encoding//plus/views.py=utf-8
+<<<<<<< HEAD
 encoding//users/urls.py=utf-8
 encoding//users/views.py=utf-8
+=======
+>>>>>>> 37bc01fdd90a4318b1b9c8463761a5b5fcab5162
 encoding/<project>=UTF-8
 encoding/functionsTest.py=utf-8

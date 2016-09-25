@@ -8,21 +8,35 @@ body{
 	font-family:Cursive;
 }
 .center{
+<<<<<<< HEAD
 position:relative;
 left:100px;
 }
 div.center ul{
 margin-top:0px;
+=======
+	width:1000
+>>>>>>> 37bc01fdd90a4318b1b9c8463761a5b5fcab5162
 }
 
 .menu{
 	margin:0px;
 	width:1366px;
 	height:45px;
-	background-color:black;
+	background-color:blue;
 	
 }
 
+<<<<<<< HEAD
+=======
+ulmenu{
+	float:left;
+	list-style-type:none;
+	margin:0;
+	padding:0;
+	
+}
+>>>>>>> 37bc01fdd90a4318b1b9c8463761a5b5fcab5162
 li{
 	display:inline
 }
@@ -44,7 +58,11 @@ div.center a:hover,a:visited{
 }
 div.content a:link,a:visited
 {
+<<<<<<< HEAD
 	color: black;
+=======
+	color: pink;
+>>>>>>> 37bc01fdd90a4318b1b9c8463761a5b5fcab5162
 
 }
 div.content a:hover
@@ -59,6 +77,7 @@ div.content a:hover
 
 .content{
 padding-left:5px;
+<<<<<<< HEAD
 border:1px solid gray;
 margin-bottom:10px;
 	width:500px;
@@ -121,4 +140,10 @@ div.pages a:hover{
 }
 a:visited{
 	background-color:red;
+=======
+margin-top:10px;
+	width:500px;
+	height:80px;
+	@border-bottom:1px solid gray;
+>>>>>>> 37bc01fdd90a4318b1b9c8463761a5b5fcab5162
 }
