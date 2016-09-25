@@ -8,31 +8,18 @@ body{
 	font-family:Cursive;
 }
 .center{
-
 position:relative;
 left:100px;
 }
 div.center ul{
 margin-top:0px;
-
-	width:1000
-
 }
 
 .menu{
 	margin:0px;
 	width:1366px;
 	height:45px;
-	background-color:blue;
-	
-}
-
-
-ulmenu{
-	float:left;
-	list-style-type:none;
-	margin:0;
-	padding:0;
+	background-color:black;
 	
 }
 
@@ -57,10 +44,7 @@ div.center a:hover,a:visited{
 }
 div.content a:link,a:visited
 {
-
 	color: black;
-
-	color: pink;
 
 }
 div.content a:hover
@@ -75,7 +59,6 @@ div.content a:hover
 
 .content{
 padding-left:5px;
-
 border:1px solid gray;
 margin-bottom:10px;
 	width:500px;
@@ -138,10 +121,4 @@ div.pages a:hover{
 }
 a:visited{
 	background-color:red;
-
-margin-top:10px;
-	width:500px;
-	height:80px;
-	@border-bottom:1px solid gray;
-
 }
