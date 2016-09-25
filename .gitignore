@@ -46,3 +46,6 @@ Network Trash Folder
 Temporary Items
 .apdisk
 d
+*.pyc
+plus/queryDB.pyc
+*.pyc
