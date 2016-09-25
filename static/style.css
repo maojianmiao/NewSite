@@ -39,8 +39,8 @@ div.menu a{float:left;
 	font-weight:700;
 	color:white
 	}
-div.menu a:hover{
-	background-color:red;
+div.center a:hover,a:visited{
+	background-color:green;
 }
 div.content a:link,a:visited
 {
@@ -118,4 +118,7 @@ div.pages a{
 }
 div.pages a:hover{
 	color:red;
+}
+a:visited{
+	background-color:red;
 }
