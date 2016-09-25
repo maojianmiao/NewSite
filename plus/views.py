@@ -52,8 +52,12 @@ def testSession(request):
         return HttpResponse(request.user.username)
     
 def about(request):
+    username = ''
+    if request.user.is_authenticated():
+        username = request.user.username
+        
     now =  time.strftime('%Y-%m-%d %H:%M:%S',time.localtime())
-    return render(request,'about.html',{'now':now})
+    return render(request,'about.html',{'now':now,'username':username})
 
 def dobject(request):
     data = User.objects.filter(username="asdkk")

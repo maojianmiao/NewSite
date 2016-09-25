@@ -42,9 +42,14 @@ div.menu a{float:left;
 div.center a:hover,a:visited{
 	background-color:green;
 }
-div.content a:link,a:visited
+div.content a:link
 {
 	color: black;
+
+}
+div.content a:visted
+{
+	color: gray;
 
 }
 div.content a:hover
